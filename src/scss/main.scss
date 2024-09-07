@@ -1,0 +1,60 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    // --primary-color: #3878d4;
+    --primary-color: #6e258d;
+    --text-primary-color: var(--primary-color);
+    --text-secondary-color: #84597d;
+    font-family: Futura, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // color-scheme: light dark;
+    // color: rgba(255, 255, 255, 0.87);
+    color: var(--text-secondary-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: var(--primary-color, #3878d4);
+    font-family: Futura;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3.6rem */
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--primary-color, #3878d4);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3.6rem */
+    text-transform: uppercase;
+}
+
+h3.subhead {
+    color: var(--text-secondary-color, var(--text-secondary-color));
+    font-family: Futura;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23999' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1em;
+  }

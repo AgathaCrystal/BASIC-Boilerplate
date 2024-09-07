@@ -1,0 +1,6 @@
+<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 4.0105L13 25.0105H36" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 25.0105L11 40.0105" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 25.0105L37 40.0105" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 36.0105C7.91843 38.4595 10.799 40.404 13.9748 41.7311C17.1505 43.0583 20.5581 43.7417 24 43.7417C27.4419 43.7417 30.8495 43.0583 34.0252 41.7311C37.201 40.404 40.0816 38.4595 42.5 36.0105" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

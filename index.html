@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- TODO: Update language as needed -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Your Company</title>
+    <meta
+      name="description"
+      content="<!-- TODO: Add site description -->"
+    />
+    <meta
+      name="keywords"
+      content="<!-- TODO: Add relevant keywords -->"
+    />
+
+    <link rel="canonical" href="<!-- TODO: Add canonical URL -->" />
+    <!--<link rel="preload" as="image" href="/assets/header-1-abc123.webp" imagesrcset="/assets/header-1-abc123-300w.webp 300w, /assets/header-1-abc123-600w.webp 600w, /assets/header-1-abc123-1050w.webp 1050w, /assets/header-1-abc123-2000w.webp 2000w" imagesizes="100vw">-->
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div id="app" class="flex flex-col relative gap-16 p-2 md:gap-32">
+      <!-- Navigation -->
+      <load src="src/components/navigation.html" />
+
+      <!-- Main Content -->
+      <main class="flex flex-col gap-12 md:gap-16 lg:gap-24">
+        <!-- Hero Section -->
+        <section
+          class="hero relative items-center content-center px-4 pt-32 lg:p-32 grid grid-cols-7 grid-rows-2 md:grid-rows-3 bg-slate-100 justify-center md:max-h-screen rounded-xl flex-col w-full md:mx-auto md:max-w-screen-2xl"
+        >
+          <div
+            class="absolute right-4 bottom-4 z-40 after:content after:bg-primary after:w-3/4 after:h-3/4 after:absolute after:rounded-full after:z-0 after:top-4 after:left-4 after:ml-0 after:animate-ping"
+          >
+            <a
+              href="/careers.html"
+              alt="Apply now"
+              class="w-28 h-28 bg-primary rounded-full text-center text-white flex items-center relative z-50 rotate-12 text-lg leading-5 shadow-md"
+              ><span class="-mt-2 w-full">Apply Now</span></a
+            >
+          </div>
+
+          <div
+            class="z-20 row-start-2 md:row-start-2 md:col-start-1 col-span-full md:col-span-3 hyphens-auto mt-4 md:mt-0"
+          >
+            <h1 class="mb-4 text-4xl md:text-6xl bg-slate-100/30 rounded-xl">
+              <!-- TODO: Update hero title -->
+              Your Main Headline Here
+            </h1>
+            <p class="mb-4 mr-20">
+              <!-- TODO: Update hero subtitle -->
+              Your subtitle or brief description
+            </p>
+            <a
+              id="cta-button"
+              href="#contact"
+              class="inline-block text-white text-regular font-bold bg-primary-dark p-4 uppercase rounded-full mb-4"
+              >Call to Action</a
+            >
+          </div>
+
+          <div
+            class="row-start-1 md:row-start-2 row-span-1 col-start-1 md:col-start-4 col-end-8 md:-mt-24"
+          >
+            <img
+              id="header-1"
+              data-src="/src/images/gradient-2.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl object-cover"
+              width="1920"
+              height="1280"
+            />
+          </div>
+          <div
+            class="z-10 row-start-2 md:row-start-3 row-span-1 md:row-span-3 col-start-3 col-end-8 md:col-start-3 md:col-end-5 min-w-60"
+          >
+            <img
+              id="header-2"
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl -mt-12 md:mt-0 hidden md:block"
+              width="1920"
+              height="1280"
+            />
+          </div>
+        </section>
+        <!-- Services Section -->
+        <section
+          id="services"
+          class="hero flex flex-col md:items-center w-full md:mx-auto md:max-w-screen-xl"
+        >
+          <h1
+            class="text-4xl text-left md:text-center md:text-6xl uppercase font-bold mb-4 px-4"
+          >
+            Our Services
+          </h1>
+          <p
+            class="mb-8 px-4 text-left font-bold md:text-center md:mb-16 md:max-w-2xl"
+          >
+            We offer a comprehensive range of services, tailored to your individual needs.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+            <load
+              src="src/components/card.html"
+              icon="graduation-cap"
+              color="var(--text-secondary-color)"
+              title="Service 1"
+              text="Description of Service 1. Add details about what this service offers and its benefits."
+            />
+            <load
+              src="src/components/card.html"
+              icon="heart-handshake"
+              color="var(--text-secondary-color)"
+              title="Service 2"
+              text="Description of Service 2. Explain how this service can help your clients or customers."
+            />
+            <load
+              src="src/components/card.html"
+              icon="stethoscope"
+              color="var(--text-secondary-color)"
+              title="Service 3"
+              text="Description of Service 3. Highlight the unique aspects of this service offering."
+            />
+            <load
+              src="src/components/card.html"
+              icon="battery-charging"
+              color="var(--text-secondary-color)"
+              title="Service 4"
+              text="Description of Service 4. Provide information on how this service addresses specific needs."
+            />
+            <load
+              src="src/components/card.html"
+              icon="home"
+              color="var(--text-secondary-color)"
+              title="Service 5"
+              text="Description of Service 5. Explain the value this service brings to your clients."
+            />
+            <load
+              src="src/components/card.html"
+              icon="star"
+              color="var(--text-secondary-color)"
+              title="Service 6"
+              text="Description of Service 6. Highlight any special features or benefits of this service."
+            />
+          </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section id="features" class="md:mx-auto md:max-w-screen-2xl">
+          <div
+            class="-mb-16 md:-mx-8 max-h-[600px] overflow-hidden rounded-xl shadow-xl"
+          >
+            <img
+              id="service-section"
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              loading="lazy"
+              class="object-[center_bottom] w-full h-auto"
+              width="1920"
+              height="1280"
+            />
+          </div>
+          <div
+            class="relative bg-primary z-10 p-4 md:p-8 text-white rounded-2xl grid md:gap-4 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="bg-white text-primary rounded-xl p-4 -mt-20 md:mt-0">
+              <h2 class="text-left text-3xl md:text-5xl mb-2">Our Features</h2>
+              <p class="text-secondary">
+                We offer a comprehensive range of features to enhance your experience:
+              </p>
+            </div>
+            <load
+              src="src/components/card-white.html"
+              icon="graduation-cap"
+              color="white"
+              title="Feature 1"
+              text="Description of Feature 1. Explain how this feature benefits your clients or customers."
+            />
+            <load
+              src="src/components/card-white.html"
+              icon="clipboard-check"
+              color="white"
+              title="Feature 2"
+              text="Description of Feature 2. Highlight the unique aspects of this feature and its advantages."
+            />
+            <load
+              src="src/components/card-white.html"
+              icon="message-circle"
+              color="white"
+              title="Feature 3"
+              text="Description of Feature 3. Provide information on how this feature addresses specific needs."
+            />
+            <load
+              src="src/components/card-white.html"
+              icon="bell-ring"
+              color="white"
+              title="Feature 4"
+              text="Description of Feature 4. Explain the value this feature brings to your service offering."
+            />
+            <load
+              src="src/components/card-white.html"
+              icon="rocking-chair"
+              color="white"
+              title="Feature 5"
+              text="Description of Feature 5. Highlight any special aspects or benefits of this feature."
+            />
+          </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <div
+          class="md:mx-auto gap-8 items-center md:max-w-screen-2xl flex flex-col-reverse md:flex-row"
+        >
+          <div class="md:w-2/2 p-4">
+            <blockquote class="text-xl md:text-2xl italic mb-4">
+              "Add your testimonial quote here. This should be a positive statement from a satisfied client or customer about your services or products."
+            </blockquote>
+            <p>John Doe, Position or Company</p>
+          </div>
+          <div class="md:w-1/3">
+            <img
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl"
+              width="415"
+              height="306"
+            />
+          </div>
+        </div>
+        <load src="src/sections/contact-form.html" />
+
+        <!-- Footer -->
+        <load src="src/sections/footer.html" />
+      </main>
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

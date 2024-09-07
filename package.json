@@ -1,0 +1,25 @@
+{
+  "name": "dorn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "sass": "^1.77.6",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1",
+    "vite-imagetools": "^7.0.4",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-sitemap": "^0.6.2"
+  },
+  "dependencies": {
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}

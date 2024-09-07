@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>Your Company - Careers</title>
+  <meta
+    name="description"
+    content="<!-- TODO: Add site description -->"
+  />
+  <meta
+    name="keywords"
+    content="<!-- TODO: Add relevant keywords -->"
+  />
+  <link rel="canonical" href="<!-- TODO: Add canonical URL -->" />
+</head>
+<body class="p-4">
+  <div id="app" class="flex flex-col relative gap-16 md:gap-32">
+    <!-- Navigation -->
+    <load src="src/components/navigation.html" />
+
+    <!-- Main Content -->
+    <main class="flex flex-col gap-12 pt-40 md:gap-16 lg:gap-24">
+      <!-- Hero Section -->
+      <section class="flex flex-col items-center gap-8 md:gap-12 lg:gap-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+          Careers
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl text-center">
+          Join our team and shape the future of healthcare.
+        </p>
+      </section>
+
+      <!-- Job Offers -->
+      <section class="flex flex-col md:max-w-screen-2xl w-full max-w-4xl mx-auto text-center">
+        <div class="bg-primary z-10 p-4 md:p-8 text-white rounded-2xl mb-4">
+          <h2 class="text-white mb-2 text-xl md:text-4xl">Healthcare Positions</h2>
+          <p>
+            We are a strong team looking for dedicated certified healthcare professionals to join our outpatient care service.
+          </p>
+        </div>
+
+        <p class="font-bold mb-12">
+          Why is our healthcare service an attractive employer?
+        </p>
+
+        <div class="flex flex-wrap justify-center mx-auto max-w-6xl w-full">
+          <load
+            src="src/components/card-career.html"
+            title="Balanced Working Hours"
+            text="<strong>No double shifts, even on weekends.</strong><br> Focus on employee well-being and a balanced work-life balance."
+          />
+          <load
+            src="src/components/card-career.html"
+            title="Optimal Working Conditions"
+            text="Well-thought-out processes. Healthcare professionals focus exclusively on their care activities."
+          />
+          <load
+            src="src/components/card-career.html"
+            title="Attractive Compensation and Benefits"
+            text="Generous vacation days, holiday pay, and special payments. Option to use company car for private use or job bike program."
+          />
+          <load
+            src="src/components/card-career.html"
+            title="Modern Technology"
+            text="Fully digital work environment with state-of-the-art technology. Paperless documentation and performance records."
+          />
+          <load
+            src="src/components/card-career.html"
+            title="Training and Development"
+            text="Support for individual training and development wishes. We value the well-being of our employees and offer optimal working conditions, fair working hours, attractive compensation, and benefits."
+          />
+        </div>
+      </section>
+
+      <!-- Training Opportunities -->
+      <section class="flex flex-col md:max-w-screen-2xl w-full max-w-4xl mx-auto text-center">
+        <div class="bg-primary z-10 p-4 md:p-8 text-white rounded-2xl mb-8">
+          <h2 class="text-white mb-2 uppercase">We Offer Training!</h2>
+          <p class="mb-8">
+            Our healthcare service is not only an employer but also a training facility with professional practical instructors for healthcare professions.
+          </p>
+
+          <div class="flex flex-col md:flex-row gap-4 w-full">
+            <div class="bg-white w-full md:w-1/2 rounded-lg p-6 text-center text-primary">
+              <h3 class="text-xl font-bold">Healthcare Professional</h3>
+              <span class="text-secondary">(3-Year Program)</span>
+            </div>
+            <div class="bg-white w-full md:w-1/2 rounded-lg p-6 text-center text-primary">
+              <h3 class="text-xl font-bold">Healthcare Assistant</h3>
+              <span class="text-secondary">(1-Year Program)</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="mb-8 mx-auto max-w-screen-md">
+          <h3 class="font-bold text-2xl text-primary uppercase mb-4 text-left">
+            Requirements for Applicants:
+          </h3>
+  
+          <ul class="list-disc text-left pl-4">
+            <li>State-recognized training as a nurse, pediatric nurse, or geriatric nurse</li>
+            <li>Willingness to work in line with our company's values</li>
+            <li>Fulfillment of tasks in accordance with the service concept and company mission</li>
+            <li>Driver's license (Class B)</li>
+          </ul>
+        </section>
+      </section>
+
+      <load src="src/sections/contact-form-career.html" />
+
+      <!-- Footer -->
+      <load src="src/sections/footer.html" />
+    </main>
+  </div>
+  <script type="module" src="src/js/main.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<section
+  id="kontakt"
+  class="bg-primary p-4 md:p-8 rounded-xl md:max-w-screen-2xl w-full max-w-4xl mx-auto mb-4"
+>
+  <form
+    id="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    value="true"
+    class="bg-primary gap-4 rounded-xl grid grid-cols-2 md:grid-cols-4"
+  >
+    <!-- Replace with your Access Key -->
+    <input
+      type="hidden"
+      name="access_key"
+      value="f55d4223-6eca-4cbe-b6fb-73e027033757"
+    />
+
+    <div class="bg-white col-span-2 p-4 rounded-lg">
+      <h2 class="text-left font-bold text-2xl md:text-4xl mb-2">
+        Schreiben Sie uns eine Nachricht
+      </h2>
+      <p class="text-secondary font-regular">
+        Bewerbungen können per E-Mail an
+        <a class="text-primary font-bold" href="mailto:info@pflege-dorn.de"
+          >info@pflege-dorn.de</a
+        >
+        oder ganz einfach über unser Kontaktformular gesendet werden.
+        <br /><br />
+        Bei Fragen können Sie uns gerne unter
+        <a class="text-primary font-bold" alt="Telefonnummmer von Pflegedorn" href="tel:062364158945"
+          >06236/4158945</a
+        >
+        per Telefon oder <a class="hover:underline underline-offset-2 font-bold text-primary" alt="Whatsapp Link" href="https://wa.me/+4915906755323">Whatsapp</a> erreichen.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-subgrid col-span-2 md:grid-cols-2 gap-4">
+      <div>
+        <label for="help-type" class="block text-white mb-2"
+          >Worum geht es?</label
+        >
+        <select
+          id="help-type"
+          name="help-type"
+          required
+          class="w-full px-4 rounded-lg h-12 appearance-none"
+        >
+          <option value="Erstberatung">Stelle als Pflegekraft</option>
+          <option value="Terminvereinbarung">
+            Ausbildung Pflegefachfrau/mann
+          </option>
+          <option value="Karriere">Altenpflegehelfer*in</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="contact-method" class="block text-white mb-2"
+          >Wie sollen wir sie kontaktieren?</label
+        >
+        <select
+          id="contact-method"
+          name="contact-method"
+          required
+          class="w-full px-4 rounded-lg h-12 appearance-none"
+        >
+          <option value="Telefon">Telefon</option>
+          <option value="email">E-Mail</option>
+        </select>
+      </div>
+      <div>
+        <label for="name" class="block text-white mb-2">Ihr Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ihr Name"
+          required
+          class="w-full px-4 rounded-lg h-12"
+        />
+      </div>
+
+      <div id="phone-field">
+        <label for="phone" class="block text-white mb-2"
+          >Ihre Telefonnummer</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+49 123 4567 890"
+          required
+          class="w-full px-4 rounded-md h-12"
+        />
+      </div>
+
+      <div id="email-field" style="display: none;">
+        <label for="email" class="block text-white mb-2"
+          >Ihre E-Mail-Adresse</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ihre.email@beispiel.de"
+          required
+          class="w-full px-4 rounded-md h-12"
+        />
+      </div>
+    </div>
+
+    <div class="col-span-2 md:col-span-4">
+      <label for="message" class="block text-white mb-2">Ihre Nachricht</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Wie können wir Ihnen helfen?"
+        required
+        class="w-full p-4 rounded-md h-32"
+      ></textarea>
+    </div>
+    <input
+      type="checkbox"
+      name="botcheck"
+      class="hidden"
+      style="display: none"
+    />
+    <button
+      type="submit"
+      id="submit-button"
+      class="bg-white text-primary h-12 px-6 py-2 md:col-start-3 col-span-2 rounded-full hover:bg-white/90 transition-colors flex items-center"
+    >
+      <span id="button-loader" class="mr-2 hidden">
+        <svg
+          class="animate-spin h-4 w-4 text-primary"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+      </span>
+      <span
+        id="button-text"
+        class="w-full text-center uppercase font-bold text-sm"
+        >Abschicken</span
+      >
+    </button>
+
+  </form>
+</section>
+
+<div
+  id="confirmation-message"
+  class="bg-primary p-4 md:p-8 rounded-xl md:max-w-screen-2xl w-full max-w-4xl mx-auto hidden"
+>
+  <div class="bg-white p-4 rounded-lg mb-6">
+    <h2 class="text-primary text-2xl font-bold uppercase">
+      Vielen Dank für Ihre Nachricht!
+    </h2>
+    <p class="text-secondary mt-2 text-center">
+      Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.
+    </p>
+  </div>
+  <button
+    id="show-form-again"
+    class="bg-white text-primary text-center uppercase font-bold text-sm h-12 px-6 py-2 md:col-start-3 col-span-2 rounded-full hover:bg-white/90 transition-colors flex items-center"
+  >
+    Zurück zum Formular
+  </button>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactMethod = document.getElementById('contact-method');
+    const phoneField = document.getElementById('phone-field');
+    const emailField = document.getElementById('email-field');
+  
+    function updateContactFields() {
+      if (contactMethod.value === 'Telefon') {
+        phoneField.style.display = 'block';
+        emailField.style.display = 'none';
+        document.getElementById('phone').required = true;
+        document.getElementById('email').required = false;
+      } else {
+        phoneField.style.display = 'none';
+        emailField.style.display = 'block';
+        document.getElementById('phone').required = false;
+        document.getElementById('email').required = true;
+      }
+    }
+  
+    contactMethod.addEventListener('change', updateContactFields);
+  
+    // Initial call to set the correct fields
+    updateContactFields();
+  });
+  </script>
