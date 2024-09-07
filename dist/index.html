@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- TODO: Update language as needed -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Your Company</title>
+    <meta
+      name="description"
+      content="<!-- TODO: Add site description -->"
+    />
+    <meta
+      name="keywords"
+      content="<!-- TODO: Add relevant keywords -->"
+    />
+
+    <link rel="canonical" href="<!-- TODO: Add canonical URL -->" />
+    <!--<link rel="preload" as="image" href="/assets/header-1-abc123.webp" imagesrcset="/assets/header-1-abc123-300w.webp 300w, /assets/header-1-abc123-600w.webp 600w, /assets/header-1-abc123-1050w.webp 1050w, /assets/header-1-abc123-2000w.webp 2000w" imagesizes="100vw">-->
+    <script type="module" crossorigin src="/assets/main-DM0JHbgz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-CC_lVp_D.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div id="app" class="flex flex-col relative gap-16 p-2 md:gap-32">
+      <!-- Navigation -->
+      <header
+  class="fixed z-50 left-0 w-full flex justify-center md:px-8 md:py-4 transition-all"
+>
+  <nav id="navbar-primary"
+    class="w-full max-w-screen-xl md:rounded-xl p-4 bg-slate-50 flex justify-between items-center relative"
+  >
+  
+    <h1 class="mr-auto text-2xl font-bold uppercase flex items-center text-primary">
+      <a href="/" class="flex items-center">
+        <svg class="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Company Name
+      </a>
+    </h1>
+    <div id="navbar-toggle" class="lg:hidden navbar-toggle">
+      
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false" type="button" class="z-50 group relative h-6 w-6" style="--width:1.25rem;--thickness:0.25rem;--gap:0.25rem;--color:#000;--duration:300ms">
+        <span class="absolute left-1/2 top-1/2 h-[var(--thickness)] w-[var(--width)] -translate-x-1/2 translate-y-[calc(-150%-var(--gap))] transition-transform duration-[calc(var(--duration)*2/3)] before:absolute before:right-0 before:h-full before:w-full before:rounded-full before:bg-primary before:transition-[width] before:delay-[calc(var(--duration)*1/3)] before:duration-[calc(var(--duration)*2/3)] group-aria-expanded:-translate-y-1/2 group-aria-expanded:-rotate-45 group-aria-expanded:delay-[calc(var(--duration)*1/3)] before:group-aria-expanded:w-[60%] before:group-aria-expanded:delay-0"></span>
+        <span class="absolute left-1/2 top-1/2 h-[var(--thickness)] w-[var(--width)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary transition-transform duration-[calc(var(--duration)*2/3)] group-aria-expanded:rotate-45 group-aria-expanded:delay-[calc(var(--duration)*1/3)]"></span>
+        <span class="absolute left-1/2 top-1/2 h-[var(--thickness)] w-[var(--width)] -translate-x-1/2 translate-y-[calc(50%+var(--gap))] transition-transform duration-[calc(var(--duration)*2/3)] before:absolute before:right-0 before:h-full before:w-[60%] before:rounded-full before:bg-primary before:transition-[right] before:delay-[calc(var(--duration)*1/3)] before:duration-[calc(var(--duration)*2/3)] group-aria-expanded:-translate-y-1/2 group-aria-expanded:-rotate-45 group-aria-expanded:delay-[calc(var(--duration)*1/3)] before:group-aria-expanded:right-[40%] before:group-aria-expanded:delay-0"></span>
+      </button>
+    </div>
+    <ul
+      class="hidden ml-auto top-1/2 left-1/2 mr-12 transform lg:flex lg:items-center lg:w-auto lg:space-x-6"
+    >
+      <li>
+        <a class="nav-link text-sm  hover:text-secondary/80" href="/#services"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a class="nav-link text-sm  hover:text-secondary/80" href="/#features"
+          >Features</a
+        >
+      </li>
+      <li><a class="nav-link text-sm text-center" href="/#contact">Contact</a></li>
+      
+      <li>
+        <a class="nav-link text-sm  hover:text-secondary/80" href="/careers.html"
+          >Careers</a
+        >
+      </li>
+    </ul>
+    <div class="hidden lg:flex lg:mr-3 items-center space-x-2 font-sans">
+      <svg
+        class="w-8 h-8 text-secondary"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        width="32"
+        height="32"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg>
+      <div>
+        <p class="text-secondary text-regular font-medium -mb-1">Have questions?</p>
+        <a href="tel:+1234567890" class="text-secondary text-regular font-bold hover:text-primary transition">123-456-7890</a>
+      </div>
+    </div>
+    <button id="cta-button"
+      href="#contact"
+      class="hidden lg:inline-block text-white md:text-sm text-regular text-center font-bold bg-primary-dark p-4 uppercase rounded-full"
+      >Schedule Appointment</button>
+  </nav>
+</header>
+<div id="navbar-menu" class="navbar-menu fixed inset-0 z-50 hidden">
+  <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+  <nav
+    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition-transform duration-300 ease-in-out transform -translate-x-full"
+  >
+    <div class="flex items-center mb-8">
+      <a class="mr-auto flex items-center text-2xl font-bold text-primary uppercase" href="/"
+        ><img src="/logo.webp" width="91" height="63" alt="<!-- TODO: Add company name -->">Company Name</a
+      >
+    </div>
+    <div>
+      <ul>
+        <li class="mb-1">
+          <a
+            class="block p-4 pl-0 text-lg font-semibold text-secondary  hover:text-primary rounded"
+            href="/"
+            >Home</a
+          >
+        </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 pl-0 text-lg font-semibold text-secondary  hover:text-primary rounded"
+            href="/#services"
+            >Services</a
+          >
+        </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 pl-0 text-lg font-semibold text-secondary hover:text-primary rounded"
+            href="/#features"
+            >Features</a
+          >
+        </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 pl-0 text-lg font-semibold text-secondary  hover:text-primary rounded"
+              href="/careers.html"
+            >Careers</a
+          >
+        </li>
+        <li class="mb-1">
+          <a
+            class="block p-4 pl-0 text-lg font-semibold text-secondary  hover:text-primary rounded"
+            href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="mt-auto">
+    </div>
+  </nav>
+</div>
+
+
+      <!-- Main Content -->
+      <main class="flex flex-col gap-12 md:gap-16 lg:gap-24">
+        <!-- Hero Section -->
+        <section
+          class="hero relative items-center content-center px-4 pt-32 lg:p-32 grid grid-cols-7 grid-rows-2 md:grid-rows-3 bg-slate-100 justify-center md:max-h-screen rounded-xl flex-col w-full md:mx-auto md:max-w-screen-2xl"
+        >
+          <div
+            class="absolute right-4 bottom-4 z-40 after:content after:bg-primary after:w-3/4 after:h-3/4 after:absolute after:rounded-full after:z-0 after:top-4 after:left-4 after:ml-0 after:animate-ping"
+          >
+            <a
+              href="/careers.html"
+              alt="Apply now"
+              class="w-28 h-28 bg-primary rounded-full text-center text-white flex items-center relative z-50 rotate-12 text-lg leading-5 shadow-md"
+              ><span class="-mt-2 w-full">Apply Now</span></a
+            >
+          </div>
+
+          <div
+            class="z-20 row-start-2 md:row-start-2 md:col-start-1 col-span-full md:col-span-3 hyphens-auto mt-4 md:mt-0"
+          >
+            <h1 class="mb-4 text-4xl md:text-6xl bg-slate-100/30 rounded-xl">
+              <!-- TODO: Update hero title -->
+              Your Main Headline Here
+            </h1>
+            <p class="mb-4 mr-20">
+              <!-- TODO: Update hero subtitle -->
+              Your subtitle or brief description
+            </p>
+            <a
+              id="cta-button"
+              href="#contact"
+              class="inline-block text-white text-regular font-bold bg-primary-dark p-4 uppercase rounded-full mb-4"
+              >Call to Action</a
+            >
+          </div>
+
+          <div
+            class="row-start-1 md:row-start-2 row-span-1 col-start-1 md:col-start-4 col-end-8 md:-mt-24"
+          >
+            <img
+              id="header-1"
+              data-src="/src/images/gradient-2.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl object-cover"
+              width="1920"
+              height="1280"
+            />
+          </div>
+          <div
+            class="z-10 row-start-2 md:row-start-3 row-span-1 md:row-span-3 col-start-3 col-end-8 md:col-start-3 md:col-end-5 min-w-60"
+          >
+            <img
+              id="header-2"
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl -mt-12 md:mt-0 hidden md:block"
+              width="1920"
+              height="1280"
+            />
+          </div>
+        </section>
+        <!-- Services Section -->
+        <section
+          id="services"
+          class="hero flex flex-col md:items-center w-full md:mx-auto md:max-w-screen-xl"
+        >
+          <h1
+            class="text-4xl text-left md:text-center md:text-6xl uppercase font-bold mb-4 px-4"
+          >
+            Our Services
+          </h1>
+          <p
+            class="mb-8 px-4 text-left font-bold md:text-center md:mb-16 md:max-w-2xl"
+          >
+            We offer a comprehensive range of services, tailored to your individual needs.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.3335 20V32M44.3335 20L24.3335 10L4.3335 20L24.3335 30L44.3335 20Z" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.3335 24V34C18.3335 40 30.3335 40 36.3335 34V24" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 1
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 1. Add details about what this service offers and its benefits.</p>
+  </div>
+</article>
+
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.1732 9.15991C40.1698 8.15307 38.9776 7.35419 37.6648 6.80909C36.3521 6.26399 34.9446 5.9834 33.5232 5.9834C32.1017 5.9834 30.6943 6.26399 29.3815 6.80909C28.0688 7.35419 26.8765 8.15307 25.8732 9.15991L24.3332 10.7199L22.7932 9.15991C21.7898 8.15307 20.5976 7.35419 19.2848 6.80909C17.9721 6.26399 16.5646 5.9834 15.1432 5.9834C13.7217 5.9834 12.3143 6.26399 11.0015 6.80909C9.68878 7.35419 8.49654 8.15307 7.49318 9.15991C3.25318 13.3999 2.99318 20.5599 8.33318 25.9999L24.3332 41.9999L40.3332 25.9999C45.6732 20.5599 45.4132 13.3999 41.1732 9.15991Z" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.3329 10.72L18.0729 17C17.2815 17.7979 16.8374 18.8762 16.8374 20C16.8374 21.1238 17.2815 22.2021 18.0729 23C18.8708 23.7914 19.9491 24.2355 21.0729 24.2355C22.1967 24.2355 23.275 23.7914 24.0729 23L28.5929 18.58C29.7162 17.4685 31.2327 16.8451 32.8129 16.8451C34.3931 16.8451 35.9096 17.4685 37.0329 18.58L41.8329 23.38" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.333 30L32.333 26" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.333 36L26.333 32" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 2
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 2. Explain how this service can help your clients or customers.</p>
+  </div>
+</article>
+
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.266 4.60004C10.2731 4.72571 10.3196 4.84595 10.3988 4.94376C10.4781 5.04156 10.5861 5.11197 10.7075 5.14501C10.829 5.17806 10.9577 5.17208 11.0756 5.12791C11.1935 5.08374 11.2945 5.00362 11.3643 4.89888C11.4341 4.79415 11.4692 4.67012 11.4647 4.54433C11.4601 4.41854 11.4161 4.29737 11.3389 4.19797C11.2617 4.09857 11.1551 4.02598 11.0344 3.99045C10.9136 3.95493 10.7848 3.95828 10.666 4.00004H8.66602C7.60515 4.00004 6.58773 4.42147 5.83759 5.17161C5.08744 5.92176 4.66602 6.93917 4.66602 8.00004V18C4.66602 21.1826 5.9303 24.2349 8.18073 26.4853C10.4312 28.7358 13.4834 30 16.666 30C19.8486 30 22.9009 28.7358 25.1513 26.4853C27.4017 24.2349 28.666 21.1826 28.666 18V8.00004C28.666 6.93917 28.2446 5.92176 27.4944 5.17161C26.7443 4.42147 25.7269 4.00004 24.666 4.00004H22.666C22.6266 4.03944 22.5954 4.08621 22.574 4.13768C22.5527 4.18915 22.5418 4.24432 22.5418 4.30004C22.5418 4.35575 22.5527 4.41092 22.574 4.4624C22.5954 4.51387 22.6266 4.56064 22.666 4.60004C22.7054 4.63944 22.7522 4.67069 22.8037 4.69201C22.8551 4.71333 22.9103 4.7243 22.966 4.7243C23.0217 4.7243 23.0769 4.71333 23.1284 4.69201C23.1798 4.67069 23.2266 4.63944 23.266 4.60004" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.666 30V32C16.666 35.1826 17.9303 38.2348 20.1807 40.4853C22.4312 42.7357 25.4834 44 28.666 44C31.8486 44 34.9009 42.7357 37.1513 40.4853C39.4017 38.2348 40.666 35.1826 40.666 32V24" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.666 24C42.8752 24 44.666 22.2091 44.666 20C44.666 17.7909 42.8752 16 40.666 16C38.4569 16 36.666 17.7909 36.666 20C36.666 22.2091 38.4569 24 40.666 24Z" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 3
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 3. Highlight the unique aspects of this service offering.</p>
+  </div>
+</article>
+
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 14H32C33.0609 14 34.0783 14.4214 34.8284 15.1716C35.5786 15.9217 36 16.9391 36 18V30C36 31.0609 35.5786 32.0783 34.8284 32.8284C34.0783 33.5786 33.0609 34 32 34H28" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 14H8C6.93913 14 5.92172 14.4214 5.17157 15.1716C4.42143 15.9217 4 16.9391 4 18V30C4 31.0609 4.42143 32.0783 5.17157 32.8284C5.92172 33.5786 6.93913 34 8 34H10" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 14L16 24H24L18 34" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44 22V26" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 4
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 4. Provide information on how this service addresses specific needs.</p>
+  </div>
+</article>
+
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.33301 18L24.333 4L42.333 18V40C42.333 41.0609 41.9116 42.0783 41.1614 42.8284C40.4113 43.5786 39.3939 44 38.333 44H10.333C9.27214 44 8.25473 43.5786 7.50458 42.8284C6.75444 42.0783 6.33301 41.0609 6.33301 40V18Z" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.333 44V24H30.333V44" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 5
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 5. Explain the value this service brings to your clients.</p>
+  </div>
+</article>
+
+            <article
+  class="p-6 rounded-xl flex flex-row gap-4 items-start sm:space-x-4"
+>
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.666 4L30.846 16.52L44.666 18.54L34.666 28.28L37.026 42.04L24.666 35.54L12.306 42.04L14.666 28.28L4.66602 18.54L18.486 16.52L24.666 4Z" stroke="var(--text-secondary-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2
+      class="text-xl md:text-2xl uppercase font-bold text-primary mb-2 text-left break-words hyphens-auto"
+    >
+      Service 6
+    </h2>
+    <p class="text-secondary break-words hyphens-auto">Description of Service 6. Highlight any special features or benefits of this service.</p>
+  </div>
+</article>
+
+          </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section id="features" class="md:mx-auto md:max-w-screen-2xl">
+          <div
+            class="-mb-16 md:-mx-8 max-h-[600px] overflow-hidden rounded-xl shadow-xl"
+          >
+            <img
+              id="service-section"
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              loading="lazy"
+              class="object-[center_bottom] w-full h-auto"
+              width="1920"
+              height="1280"
+            />
+          </div>
+          <div
+            class="relative bg-primary z-10 p-4 md:p-8 text-white rounded-2xl grid md:gap-4 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="bg-white text-primary rounded-xl p-4 -mt-20 md:mt-0">
+              <h2 class="text-left text-3xl md:text-5xl mb-2">Our Features</h2>
+              <p class="text-secondary">
+                We offer a comprehensive range of features to enhance your experience:
+              </p>
+            </div>
+            <article class="p-6 rounded-xl flex gap-4 flex-row items-start sm:space-x-4">
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.3335 20V32M44.3335 20L24.3335 10L4.3335 20L24.3335 30L44.3335 20Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.3335 24V34C18.3335 40 30.3335 40 36.3335 34V24" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2 class="text-xl md:text-2xl uppercase font-bold text-white mb-2 break-words text-left  hyphens-auto">
+      Feature 1
+    </h2>
+    <p class="text-white break-words hyphens-auto">Description of Feature 1. Explain how this feature benefits your clients or customers.</p>
+  </div>
+</article>
+            <article class="p-6 rounded-xl flex gap-4 flex-row items-start sm:space-x-4">
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 4H18C16.8954 4 16 4.89543 16 6V10C16 11.1046 16.8954 12 18 12H30C31.1046 12 32 11.1046 32 10V6C32 4.89543 31.1046 4 30 4Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 8H36C37.0609 8 38.0783 8.42143 38.8284 9.17157C39.5786 9.92172 40 10.9391 40 12V40C40 41.0609 39.5786 42.0783 38.8284 42.8284C38.0783 43.5786 37.0609 44 36 44H12C10.9391 44 9.92172 43.5786 9.17157 42.8284C8.42143 42.0783 8 41.0609 8 40V12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8H16" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 28L22 32L30 24" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2 class="text-xl md:text-2xl uppercase font-bold text-white mb-2 break-words text-left  hyphens-auto">
+      Feature 2
+    </h2>
+    <p class="text-white break-words hyphens-auto">Description of Feature 2. Highlight the unique aspects of this feature and its advantages.</p>
+  </div>
+</article>
+            <article class="p-6 rounded-xl flex gap-4 flex-row items-start sm:space-x-4">
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.667 23.0106C42.6739 25.6503 42.0571 28.2543 40.867 30.6106C39.4559 33.434 37.2865 35.8089 34.6019 37.4691C31.9173 39.1293 28.8235 40.0093 25.667 40.0106C23.0273 40.0174 20.4232 39.4007 18.067 38.2106L6.66699 42.0106L10.467 30.6106C9.27685 28.2543 8.66011 25.6503 8.66699 23.0106C8.66821 19.8541 9.54822 16.7603 11.2084 14.0757C12.8686 11.3911 15.2435 9.22169 18.067 7.81056C20.4232 6.62042 23.0273 6.00367 25.667 6.01056H26.667C30.8357 6.24054 34.7731 8.00008 37.7253 10.9523C40.6775 13.9045 42.437 17.8419 42.667 22.0106V23.0106Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2 class="text-xl md:text-2xl uppercase font-bold text-white mb-2 break-words text-left  hyphens-auto">
+      Feature 3
+    </h2>
+    <p class="text-white break-words hyphens-auto">Description of Feature 3. Provide information on how this feature addresses specific needs.</p>
+  </div>
+</article>
+            <article class="p-6 rounded-xl flex gap-4 flex-row items-start sm:space-x-4">
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.3335 16.0105C36.3335 12.8279 35.0692 9.77565 32.8188 7.52522C30.5683 5.27478 27.5161 4.0105 24.3335 4.0105C21.1509 4.0105 18.0987 5.27478 15.8482 7.52522C13.5978 9.77565 12.3335 12.8279 12.3335 16.0105C12.3335 30.0105 6.3335 34.0105 6.3335 34.0105H42.3335C42.3335 34.0105 36.3335 30.0105 36.3335 16.0105Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.7935 42.0105C27.4419 42.6167 26.9372 43.1198 26.33 43.4696C25.7228 43.8193 25.0343 44.0034 24.3335 44.0034C23.6328 44.0034 22.9443 43.8193 22.3371 43.4696C21.7298 43.1198 21.2252 42.6167 20.8735 42.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.3335 16.0105C4.3335 11.6105 5.7335 7.4105 8.3335 4.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44.3335 16.0105C44.3335 11.6831 42.9299 7.47242 40.3335 4.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2 class="text-xl md:text-2xl uppercase font-bold text-white mb-2 break-words text-left  hyphens-auto">
+      Feature 4
+    </h2>
+    <p class="text-white break-words hyphens-auto">Description of Feature 4. Explain the value this feature brings to your service offering.</p>
+  </div>
+</article>
+            <article class="p-6 rounded-xl flex gap-4 flex-row items-start sm:space-x-4">
+  <div class="flex-shrink-0 mb-4 sm:mb-0">
+    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 4.0105L13 25.0105H36" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 25.0105L11 40.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 25.0105L37 40.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 36.0105C7.91843 38.4595 10.799 40.404 13.9748 41.7311C17.1505 43.0583 20.5581 43.7417 24 43.7417C27.4419 43.7417 30.8495 43.0583 34.0252 41.7311C37.201 40.404 40.0816 38.4595 42.5 36.0105" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  </div>
+  <div class="flex-grow w-full">
+    <h2 class="text-xl md:text-2xl uppercase font-bold text-white mb-2 break-words text-left  hyphens-auto">
+      Feature 5
+    </h2>
+    <p class="text-white break-words hyphens-auto">Description of Feature 5. Highlight any special aspects or benefits of this feature.</p>
+  </div>
+</article>
+          </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <div
+          class="md:mx-auto gap-8 items-center md:max-w-screen-2xl flex flex-col-reverse md:flex-row"
+        >
+          <div class="md:w-2/2 p-4">
+            <blockquote class="text-xl md:text-2xl italic mb-4">
+              "Add your testimonial quote here. This should be a positive statement from a satisfied client or customer about your services or products."
+            </blockquote>
+            <p>John Doe, Position or Company</p>
+          </div>
+          <div class="md:w-1/3">
+            <img
+              data-src="/src/images/gradient-3.jpg"
+              alt="<!-- TODO: Add alt text -->"
+              class="rounded-2xl"
+              width="415"
+              height="306"
+            />
+          </div>
+        </div>
+        <section
+  id="contact"
+  class="bg-primary p-4 md:p-8 rounded-xl md:max-w-screen-2xl w-full max-w-4xl mx-auto mb-4"
+>
+  <form
+    id="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    value="true"
+    class="bg-primary gap-4 rounded-xl grid grid-cols-2 md:grid-cols-4"
+  >
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="f55d4223-6eca-4cbe-b6fb-73e027033757">
+
+    <div class="bg-white col-span-2 p-4 rounded-lg">
+      <h2 class="text-left font-bold text-2xl md:text-4xl mb-2">
+        Schreiben Sie uns eine Nachricht
+      </h2>
+      <p class="text-secondary font-regular">
+        Wir unterstützen Sie nicht nur in der direkten Pflege, sondern auch bei
+        wichtigen organisatorischen Aufgaben:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-subgrid col-span-2 md:grid-cols-2 gap-4">
+      <div>
+        <label for="help-type" class="block text-white mb-2"
+          >Wie können wir Ihnen helfen?</label
+        >
+        <select
+          id="help-type"
+          name="help-type"
+          required
+          class="w-full px-4 rounded-lg h-12 appearance-none"
+        >
+          <option value="Erstberatung">Erstberatung</option>
+          <option value="Terminvereinbarung">Terminvereinbarung</option>
+          <option value="Karriere">Karriere</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="contact-method" class="block text-white mb-2"
+          >Wie sollen wir sie kontaktieren?</label
+        >
+        <select
+          id="contact-method"
+          name="contact-method"
+          required
+          class="w-full px-4 rounded-lg h-12 appearance-none"
+        >
+          <option value="Telefon">Telefon</option>
+          <option value="email">E-Mail</option>
+        </select>
+      </div>
+      <div>
+        <label for="name" class="block text-white mb-2">Ihr Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ihr Name"
+          required
+          class="w-full px-4 rounded-lg h-12"
+        >
+      </div>
+
+      <div id="phone-field">
+        <label for="phone" class="block text-white mb-2"
+          >Ihre Telefonnummer</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+49 123 4567 890"
+          required
+          class="w-full px-4 rounded-md h-12"
+        >
+      </div>
+
+      <div id="email-field" style="display: none;">
+        <label for="email" class="block text-white mb-2"
+          >Ihre E-Mail-Adresse</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ihre.email@beispiel.de"
+          required
+          class="w-full px-4 rounded-md h-12"
+        >
+      </div>
+    </div>
+
+    <div class="col-span-2 md:col-span-4">
+      <label for="message" class="block text-white mb-2">Ihre Nachricht</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Wie können wir Ihnen helfen?"
+        required
+        class="w-full p-4 rounded-md h-32"
+      ></textarea>
+    </div>
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <button
+      type="submit"
+      id="submit-button"
+      class="bg-white text-primary  h-12 px-6 py-2 md:col-start-3 col-span-2 rounded-full hover:bg-white/90 transition-colors flex items-center"
+    >
+      <span id="button-loader" class="mr-2 hidden">
+        <svg
+          class="animate-spin h-4 w-4 text-primary"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+      </span>
+      <span
+        id="button-text"
+        class="w-full text-center uppercase font-bold text-sm"
+        >Abschicken</span
+      >
+    </button>
+
+  </form>
+</section>
+
+<div
+  id="confirmation-message"
+  class="bg-primary p-4 md:p-8 rounded-xl md:max-w-screen-2xl w-full max-w-4xl mx-auto hidden"
+>
+  <div class="bg-white p-4 rounded-lg mb-6">
+    <h2 class="text-primary text-2xl font-bold uppercase">
+      Vielen Dank für Ihre Nachricht!
+    </h2>
+    <p class="text-secondary mt-2 text-center">
+      Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.
+    </p>
+  </div>
+  <button
+    id="show-form-again"
+    class="bg-white text-primary text-center uppercase font-bold text-sm h-12 px-6 py-2 md:col-start-3 col-span-2 rounded-full hover:bg-white/90 transition-colors flex items-center"
+    >
+    Zurück zum Formular
+  </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const contactMethod = document.getElementById('contact-method');
+  const phoneField = document.getElementById('phone-field');
+  const emailField = document.getElementById('email-field');
+
+  function updateContactFields() {
+    if (contactMethod.value === 'Telefon') {
+      phoneField.style.display = 'block';
+      emailField.style.display = 'none';
+      document.getElementById('phone').required = true;
+      document.getElementById('email').required = false;
+    } else {
+      phoneField.style.display = 'none';
+      emailField.style.display = 'block';
+      document.getElementById('phone').required = false;
+      document.getElementById('email').required = true;
+    }
+  }
+
+  contactMethod.addEventListener('change', updateContactFields);
+
+  // Initial call to set the correct fields
+  updateContactFields();
+});
+</script>
+
+        <!-- Footer -->
+        <footer
+  class="w-full min-h-52 bg-primary items-center text-white rounded-xl p-8"
+>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+    <!-- Column 1: Contact Information -->
+    <div class="bg-white text-secondary rounded-lg p-8">
+      <h3 class="text-2xl uppercase font-bold mb-4 text-primary hyphens-auto">
+          Company Name
+      </h3>
+      <p class="flex gap-2 mb-2">
+        <svg
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 10.2437C20 16.2437 12 22.2437 12 22.2437C12 22.2437 4 16.2437 4 10.2437C4 8.12192 4.84285 6.08709 6.34315 4.5868C7.84344 3.08651 9.87827 2.24365 12 2.24365C14.1217 2.24365 16.1566 3.08651 17.6569 4.5868C19.1571 6.08709 20 8.12192 20 10.2437Z"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 13.2437C13.6569 13.2437 15 11.9005 15 10.2437C15 8.5868 13.6569 7.24365 12 7.24365C10.3431 7.24365 9 8.5868 9 10.2437C9 11.9005 10.3431 13.2437 12 13.2437Z"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        123 Main Street<br />
+        City, State 12345
+      </p>
+      <a
+        href="mailto:info@example.com"
+        alt="Company Email"
+        class="flex gap-2 mb-2 hover:text-primary transition hyphens-auto"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 4.98779H4C2.89543 4.98779 2 5.88322 2 6.98779V18.9878C2 20.0924 2.89543 20.9878 4 20.9878H20C21.1046 20.9878 22 20.0924 22 18.9878V6.98779C22 5.88322 21.1046 4.98779 20 4.98779Z"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22 7.98779L13.03 13.6878C12.7213 13.8812 12.3643 13.9838 12 13.9838C11.6357 13.9838 11.2787 13.8812 10.97 13.6878L2 7.98779"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+        >info@example.com
+      </a>
+      <a
+        href="tel:+11234567890"
+        alt="Company Phone"
+        class="flex gap-2 mb-2  hover:text-primary transition"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.9999 17.9079V20.9079C22.0011 21.1864 21.944 21.4621 21.8324 21.7172C21.7209 21.9724 21.5572 22.2015 21.352 22.3898C21.1468 22.578 20.9045 22.7214 20.6407 22.8106C20.3769 22.8998 20.0973 22.933 19.8199 22.9079C16.7428 22.5735 13.7869 21.522 11.1899 19.8379C8.77376 18.3026 6.72527 16.2541 5.18993 13.8379C3.49991 11.2291 2.44818 8.25888 2.11993 5.16789C2.09494 4.89136 2.12781 4.61265 2.21643 4.34951C2.30506 4.08638 2.4475 3.84458 2.6347 3.63951C2.82189 3.43444 3.04974 3.2706 3.30372 3.15841C3.55771 3.04622 3.83227 2.98815 4.10993 2.98789H7.10993C7.59524 2.98311 8.06572 3.15497 8.43369 3.47142C8.80166 3.78788 9.04201 4.22734 9.10993 4.70789C9.23656 5.66796 9.47138 6.61062 9.80993 7.51789C9.94448 7.87581 9.9736 8.2648 9.89384 8.63877C9.81408 9.01274 9.6288 9.356 9.35993 9.62789L8.08993 10.8979C9.51349 13.4014 11.5864 15.4743 14.0899 16.8979L15.3599 15.6279C15.6318 15.359 15.9751 15.1737 16.3491 15.094C16.723 15.0142 17.112 15.0433 17.4699 15.1779C18.3772 15.5164 19.3199 15.7513 20.2799 15.8779C20.7657 15.9464 21.2093 16.1911 21.5265 16.5654C21.8436 16.9397 22.0121 17.4175 21.9999 17.9079Z"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        (123) 456-7890
+      </a>
+      <p class="flex gap-2">
+        <svg
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 9.98779V2.98779H18V9.98779"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 18.9878H4C3.46957 18.9878 2.96086 18.7771 2.58579 18.402C2.21071 18.0269 2 17.5182 2 16.9878V11.9878C2 11.4574 2.21071 10.9487 2.58579 10.5736C2.96086 10.1985 3.46957 9.98779 4 9.98779H20C20.5304 9.98779 21.0391 10.1985 21.4142 10.5736C21.7893 10.9487 22 11.4574 22 11.9878V16.9878C22 17.5182 21.7893 18.0269 21.4142 18.402C21.0391 18.7771 20.5304 18.98779 20 18.98779H18"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 14.9878H6V22.9878H18V14.9878Z"
+            stroke="var(--text-secondary-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        (123) 456-7891
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="flex flex-col">
+      <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+      <ul>
+        <li class="mb-2">
+          <a href="#" class="hover:underline underline-offset-2">Home</a>
+        </li>
+        <li class="mb-2">
+          <a href="#services" class="hover:underline underline-offset-2"
+            >Services</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="#about" class="hover:underline underline-offset-2"
+            >About Us</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="#contact" class="hover:underline underline-offset-2"
+            >Contact</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="/careers.html" class="hover:underline underline-offset-2"
+            >Careers</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="/privacy.html" class="hover:underline underline-offset-2"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="/terms.html" class="hover:underline underline-offset-2"
+            >Terms of Service</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col gap-8 items-center">
+      <div
+        class="hidden gap lg:flex lg:mr-3 items-center space-x-4 font-sans text-white"
+      >
+        <svg
+          class="w-8 h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          width="32"
+          height="32"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+          />
+        </svg>
+        <div>
+          <p class="text-2xl font-regular">Have questions?</p>
+          <a
+            href="tel:+11234567890"
+            alt="Company Phone"
+            class="text-xl font-bold  hover:underline transition"
+            >(123) 456-7890</a
+          >
+        </div>
+      </div>
+      <a
+        href="#"
+        class="hidden lg:inline-block text-primary text-sm font-bold bg-white px-8 py-4 uppercase rounded-full text-center"
+        >Schedule an Appointment</a
+      >
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="mt-8 pt-8 w-full text-center">
+    <div class="flex flex-row w-full justify-center mb-8 gap-4">
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        aria-label="Company on Facebook"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook"
+        >
+          <path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        aria-label="Company on Instagram"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram"
+        >
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+      ></a>
+      <a
+        href="https://www.twitter.com"
+        target="_blank"
+        aria-label="Company on Twitter"
+      >
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.886 7.17c.183.005.386.015.579.443.128.285.343.81.519 1.238.137.333.249.607.277.663.064.128.104.275.02.448l-.028.058a1.43 1.43 0 0 1-.23.37 9.386 9.386 0 0 0-.143.17c-.085.104-.17.206-.242.278-.129.128-.262.266-.114.522.149.256.668 1.098 1.435 1.777a6.634 6.634 0 0 0 1.903 1.2c.07.03.127.055.17.076.257.128.41.108.558-.064.149-.173.643-.749.817-1.005.168-.256.34-.216.578-.128.238.089 1.504.71 1.761.837l.143.07c.179.085.3.144.352.23.064.109.064.62-.148 1.222-.218.6-1.267 1.176-1.742 1.22l-.135.016c-.436.052-.988.12-2.956-.655-2.426-.954-4.027-3.32-4.35-3.799a2.768 2.768 0 0 0-.053-.076l-.006-.008c-.147-.197-1.048-1.402-1.048-2.646 0-1.19.587-1.81.854-2.092l.047-.05a.95.95 0 0 1 .687-.32c.173 0 .347 0 .495.005Z"
+            fill="#fff"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.184 21.331a.4.4 0 0 0 .487.494l4.607-1.204a10 10 0 0 0 4.76 1.207h.004c5.486 0 9.958-4.447 9.958-9.912a9.828 9.828 0 0 0-2.914-7.011A9.917 9.917 0 0 0 12.042 2c-5.486 0-9.958 4.446-9.958 9.911 0 1.739.458 3.447 1.33 4.954l-1.23 4.466Zm2.677-4.068a1.5 1.5 0 0 0-.148-1.15 8.377 8.377 0 0 1-1.129-4.202c0-4.63 3.793-8.411 8.458-8.411 2.27 0 4.388.877 5.986 2.468a8.328 8.328 0 0 1 2.472 5.948c0 4.63-3.793 8.412-8.458 8.412h-.005a8.5 8.5 0 0 1-4.044-1.026 1.5 1.5 0 0 0-1.094-.132l-2.762.721.724-2.628Z"
+            fill="#fff"
+          />
+        </svg>
+      </a>
+    </div>
+    <p>
+      © 2024 Company Name. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+      </main>
+    </div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

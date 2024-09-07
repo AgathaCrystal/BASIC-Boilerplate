@@ -1,0 +1,4 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.3335 20V32M44.3335 20L24.3335 10L4.3335 20L24.3335 30L44.3335 20Z" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.3335 24V34C18.3335 40 30.3335 40 36.3335 34V24" stroke="{=$color}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
