@@ -23,6 +23,8 @@ Many businesses often opt for overly complex solutions when a simple, static web
 - Gzip compression for production builds
 - Responsive design ready
 
+![google pagespeed](pagespeed.png)
+
 ## 🛠️ Tech Stack
 
 - [Vite](https://vitejs.dev/): Next-generation frontend tooling
