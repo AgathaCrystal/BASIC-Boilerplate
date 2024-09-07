@@ -46,9 +46,9 @@ project-root/
 │   ├── scss/             # SCSS files
 │   └── sections/         # Larger HTML sections
 ├── index.html            # Main HTML file
-├── impressum.html        # Imprint page
-├── karriere.html         # Careers page
-├── datenschutz.html      # Privacy policy page
+├── privacy.html          # Imprint page
+├── careers.html          # Careers page
+├── terms.html            # Privacy policy page
 ├── package.json          # Project dependencies and scripts
 ├── tailwind.config.js    # Tailwind CSS configuration
 └── vite.config.js        # Vite configuration
